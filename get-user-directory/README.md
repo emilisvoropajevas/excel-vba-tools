@@ -1,4 +1,4 @@
-# Get User Directory VBA Macro
+# VBA Get User Directory Macro
 
 ## Overview
 This VBA macro retrieves the current Windows user's directory path and writes it into cell B3 in Excel. Validation is added if target cell is empty.

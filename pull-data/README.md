@@ -1,4 +1,4 @@
-# Pull Data VBA Macro
+# VBA Pull Data Macro
 
 ## Overview
 
@@ -12,6 +12,10 @@ The macro automatically:
 - Pastes the file names into a worksheet
 - Sorts the file list numerically
 - Clears previous imported data before loading new data
+
+## Requirements
+
+This macro runs on **Microsoft Windows** only.
 
 ---
 
