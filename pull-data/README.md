@@ -15,17 +15,6 @@ The macro automatically:
 
 ---
 
-# Features
-
-- Automatic file retrieval
-- Numeric file sorting
-- Clears old imported data before each run
-- Works well with image folders
-- Lightweight and fast execution
-- Simple Excel integration
-
----
-
 # Workbook Structure
 
 The macro uses the following worksheets:
@@ -35,7 +24,6 @@ The macro uses the following worksheets:
 | `Introduction` | Stores the selected folder path |
 | `Test_WorkingSheet` | Displays imported file names |
 
----
 
 # Required Cell Setup
 
@@ -55,16 +43,7 @@ C:\Users\YourName\Pictures
 
 # How To Use
 
-## Step 1 — Open the Workbook
-
-Open the Excel workbook containing the VBA macros and ensure:
-
-- Macros are enabled
-- The workbook is saved as a `.xlsm` file
-
----
-
-## Step 2 — Select the Source Folder
+## Step 1 — Select the Source Folder
 
 Run the following macro:
 
@@ -88,7 +67,7 @@ C:\Users\YourName\Pictures
 
 ---
 
-## Step 3 — Pull File Names Into Excel
+## Step 2 — Pull File Names Into Excel
 
 Run the following macro:
 
@@ -96,24 +75,15 @@ Run the following macro:
 PullData
 ```
 
-or:
+or :
 
 ```vb
 GetFileList
 ```
 
-The macro will automatically:
-
-1. Read the folder path from `Introduction!D3`
-2. Retrieve all file names from the selected folder
-3. Clear previous imported data
-4. Paste the file names into `Test_WorkingSheet`
-5. Sort the files numerically
-6. Display a completion message
-
 ---
 
-## Step 4 — View Imported Data
+## Step 3 — View Imported Data
 
 Imported file names will appear in:
 
@@ -137,32 +107,6 @@ Example output:
 
 The macro automatically sorts files numerically rather than alphabetically.
 
-### Example
-
-Without numeric sorting:
-
-```text
-1.jpg
-10.jpg
-11.jpg
-2.jpg
-```
-
-After numeric sorting:
-
-```text
-1.jpg
-2.jpg
-10.jpg
-11.jpg
-```
-
-The numeric value is extracted using:
-
-```vb
-Val(nameWithoutExt)
-```
-
 ---
 
 # Main VBA Procedures
@@ -183,15 +127,6 @@ Imported file names are placed starting from:
 | Worksheet | Starting Cell |
 |---|---|
 | `Test_WorkingSheet` | `A3` |
-
----
-
-# Requirements
-
-- Microsoft Excel
-- VBA enabled workbook (`.xlsm`)
-- Windows operating system
-- Macro permissions enabled
 
 ---
 
@@ -232,15 +167,6 @@ Check:
 
 ---
 
-# Example Workflow
-
-1. Run `GetUserDirectory`
-2. Select a folder containing images/files
-3. Run `PullData`
-4. Review imported file names in `Test_WorkingSheet`
-
----
-
 # Future Improvements
 
 This VBA solution can easily be extended to support:
@@ -251,5 +177,3 @@ This VBA solution can easily be extended to support:
 - File metadata extraction
 - Automated renaming workflows
 - Duplicate file detection
-
----
