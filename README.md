@@ -19,7 +19,7 @@ The macros were designed to automate renaming images, specifically ```.jpg``` fi
 
 | Macro | File | Purpose |
 |---|---|---|
-| GetCurrentUserDirectory | get-user-directory.bas | Gets Windows user path |
+| GetUserDirectory | get-user-directory.bas | Gets Windows user path |
 | PullData | pull-data.bas | Pulls image file paths into the Test Sheet |
 | RenameImages | rename-images.bas | Renames .jpg files |
 | TransferData | transfer-data.bas | Copies mapped columns to Working Sheet |
