@@ -1,5 +1,5 @@
 Attribute VB_Name = "Module4"
-Sub Transfer_Data()
+Sub TransferData()
     Dim srcSheet As Worksheet
     Dim destSheet As Worksheet
     Dim lastRow As Long
