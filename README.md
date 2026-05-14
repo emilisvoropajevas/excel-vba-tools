@@ -34,7 +34,7 @@ The macros were designed to automate renaming images, specifically ```.jpg``` fi
 
 ## Limitations
 
-- Windows only — relies on `Environ("USERPROFILE")` and the `ren` shell command
+- Windows only! ```GetUserDirectory``` relies on `Environ("USERPROFILE")` and the `ren` shell command
 - `.jpg` files only
 - Sheet names must match exactly or macros will fail
 
